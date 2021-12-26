@@ -48,13 +48,17 @@ const PostCard = ({ post }) => {
 					</svg>
 					<span>{moment(post.createdAt).format("MMM DD,YYYY")}</span>
 				</div>
-				</div>
-			<p className="text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8">{post.excerpt}</p>
+			</div>
+			<p className="text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8">
+				{post.excerpt}
+			</p>
 			<div className="text-center">
-			<Link href={`/post/${post.slug}`}>
-				<span className="transition duration-500 transform hover:-translate-y-1 inline-block bg-blue-500 text-white text-lg font-medium rounded-full px-8 py-3 cursor-pointer">Continue Reading</span>
-					</Link>
-				</div>
+				<Link href={`/post/${post.slug}`}>
+					<span className="transition duration-500 transform hover:-translate-y-1 inline-block bg-blue-500 text-white text-lg font-medium rounded-full px-8 py-3 cursor-pointer">
+						Continue Reading
+					</span>
+				</Link>
+			</div>
 		</div>
 	);
 };
