@@ -8,7 +8,14 @@ export default function Home({ posts }) {
 		<div className="container mx-auto px-10 mb-8">
 			<Head>
 				<title>Ultronic Blog</title>
+                                <style>
+                 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
+		html
+		,body {
+                     font-family:'Montserrat', sans-serif;
+		}
+		</style>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<FeaturedPosts />
