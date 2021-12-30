@@ -2,7 +2,6 @@ import Head from "next/head";
 import { PostCard, PostWidget, Categories } from "../components";
 import FeaturedPosts from "../sections/FeaturedPosts";
 import { getPosts } from "../services";
-import '../styles/globals.scss'
 
 export default function Home({ posts }) {
 	return (
