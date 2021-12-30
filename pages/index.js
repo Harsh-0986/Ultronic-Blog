@@ -11,10 +11,6 @@ export default function Home({ posts }) {
                                 <style>
                  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
-		html
-		,body {
-                     font-family:'Montserrat', sans-serif;
-		}
 		</style>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
